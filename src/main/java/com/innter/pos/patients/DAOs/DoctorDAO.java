@@ -10,6 +10,8 @@ import org.springframework.stereotype.Repository;
 public interface DoctorDAO extends JpaRepository<DoctorEntity, Long> {
 
     @Query("SELECT d FROM DoctorEntity d WHERE d.id = :id")
-    DoctorEntity getDoctor (@Param("id") Long id);
+    DoctorEntity getDoctor(@Param("id") Long id);
 
+    @Query("SELECT d FROM DoctorEntity d WHERE d.cedula = :cedula")
+    DoctorEntity getDoctorByCedula(@Param("cedula") String cedula);
 }

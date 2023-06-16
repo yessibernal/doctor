@@ -9,7 +9,6 @@ import org.mapstruct.Mapper;
         componentModel = "spring"
 )
 public interface IDoctorMapper {
-
     DoctorResponse doctorToDoctorResponse (DoctorEntity doctor);
 
     DoctorEntity doctorRequestToDoctor (DoctorRequest doctorRequest);

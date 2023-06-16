@@ -7,10 +7,11 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class PersonDto {
+
     private int person_id;
     private String name;
     private String last_name;

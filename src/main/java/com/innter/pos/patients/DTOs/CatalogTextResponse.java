@@ -1,30 +1,27 @@
 package com.innter.pos.patients.DTOs;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatientRequest {
+public class CatalogTextResponse {
 
     @NotNull
-    @JsonProperty("file_number")
-    private String fileNumber;
+    @JsonProperty("catalogText_id")
+    private Long id;
 
     @NotNull
-    @NotBlank
-    @JsonProperty("diagnostic")
-    private String diagnostic;
+    @JsonProperty("type")
+    private String type;
 
     @NotNull
-    @JsonProperty("persona")
-    private PersonDto personDto;
+    @JsonProperty("value")
+    private String value;
 }

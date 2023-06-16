@@ -8,7 +8,6 @@ import com.innter.pos.patients.entities.DoctorEntity;
 
 public interface IPatientService {
 
-
     public PatientResponse createPerson(PatientDoctorDto patientDoctorDto);
 
     public PatientResponse getPatient(Long id);

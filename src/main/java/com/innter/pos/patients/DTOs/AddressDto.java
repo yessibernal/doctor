@@ -11,6 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddressDto {
+
     private String address_id;
     private String street;
     private int external_number;

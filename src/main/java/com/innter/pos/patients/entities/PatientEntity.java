@@ -20,7 +20,6 @@ import java.util.List;
 @NoArgsConstructor
 public class PatientEntity {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "fi_id")
